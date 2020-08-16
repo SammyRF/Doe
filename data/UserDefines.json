@@ -1,0 +1,27 @@
+{
+    "cases": [
+        {
+            "casename": "Sample",
+            "file": "data/Sample.csv",
+            "inputs": [
+                {"name": "2001000", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001001", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001002", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001003", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001004", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001005", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001006", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001007", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001008", "minVal": 2.0, "maxVal": 6.0},
+                {"name": "2001009", "minVal": 2.0, "maxVal": 6.0}
+            ],
+            "outputs": [
+                {"name": "Compression Up", "model": "GradientBoost-200", "target": 7.0, "startInterp": 0.0, "endInterp": 0.0},
+                {"name": "Compression Down", "model": "LinearSVR-C5", "target": 9.0, "startInterp": 0.0, "endInterp": 0.0},
+                {"name": "Direction Up", "model": "GradientBoost-200", "target": 9.0, "startInterp": 0.0, "endInterp": 0.0},
+                {"name": "Direction Down", "model": "LinearReg", "target": 9.0, "startInterp": 0.0, "endInterp": 0.0},
+                {"name": "Reach Time", "model": "LinearReg", "target": 8.0, "startInterp": 0.0, "endInterp": 0.0}
+            ]
+        }
+    ]
+}
